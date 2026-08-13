@@ -1,0 +1,38 @@
+let mapleader = " "
+
+" Navigation
+nmap gd :vsc Edit.GoToDefinition<CR>
+nmap gi :vsc Edit.GoToImplementation<CR>
+nmap gr :vsc Edit.FindAllReferences<CR>
+nmap gp :vsc Edit.PeekDefinition<CR>
+
+" Diagnostics
+nmap ]d :vsc Edit.GoToNextIssueInFile<CR>
+nmap [d :vsc Edit.GoToPreviousIssueInFile<CR>
+
+" Comments
+nmap gc :vsc Edit.ToggleLineComment<CR>
+vmap gc :vsc Edit.ToggleLineComment<CR>
+
+" Tabs
+nmap gt :vsc Window.NextTab<CR>
+nmap gT :vsc Window.PreviousTab<CR>
+
+" Rename
+nmap <leader>rn :vsc Refactor.Rename<CR>
+
+" Format
+nmap <leader>f :vsc Edit.FormatDocument<CR>
+
+" New Horizontal tab group
+nmap <leader>sv :vsc Window.NewVerticalTabGroup<CR>
+nmap <leader>ss :vsc Window.NewHorizontalTabGroup<CR>
+nmap <leader>mn :vsc Window.MovetoNextTabGroup<CR>
+nmap <leader>mp :vsc Window.MovetoPreviousTabGroup<CR>
+nmap <leader>ca :vsc Window.CloseAllDocuments<CR>
+
+" Clipboard
+set clipboard=unnamed
+
+" Numbers
+set number relativenumber
